@@ -1,337 +1,35 @@
-<html lang="en">
-  <script
-    src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"
-    id="eppiocemhmnlbhjplcgkofciiegomcon"
-  ></script>
-  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
-  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <script
-      bis_use="true"
-      type="text/javascript"
-      charset="utf-8"
-      data-bis-config='{"blacklistIframeSrc":["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//www.google.com/recaptcha/enterprise/anchor","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com","//lnkd.demdex.net/","//radar.cedexis.com/","//li.protechts.net/","challenges.cloudflare.com/","ogs.google.com","//www.ukrnafta.com/data/map/","//maps.google.com/maps","//www.openstreetmap.org/export/embed.html","//www.google.com/maps/d/u/3/embed","//itm.ebaydesc.com/itmdesc","//books.google.com/books","//embed.podcasts.apple.com","//www.paypal.com/smartchat","//www.centurylink.com/assets/includes/common/sfChatiFrame.html","//macmillan-prod-gen.ada.support/embed","//macmillan-prod-gen.ada.support/chat","//ctl-consumer.my.site.com/"],"whitelistDomainsForPostBody":["youtube.com"]}'
-      data-dynamic-id="66be6aca-7ffc-4103-ae11-4de9686fcc20"
-      src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
-    ></script>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Iniciando Sesion - Mundogaturro</title>
-    <!-- CSRF Token -->
-    <meta
-      name="csrf-token"
-      content="1erd3JshyIZCcHn5nxSaycTSILzq1OPjDi3cyMiC"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-4436008-29"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-4436008-29");
-    </script>
-    <!-- Styles -->
-    <link href="/css/app.css?id=100c6796821350d5c510" rel="stylesheet" />
-    <link href="/css/login.css?id=5e427e5afc2ceaa49222" rel="stylesheet" />
-    <link
-      href="//fonts.googleapis.com/css?family=Londrina+Solid"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <title>Iniciando Sesión - Mundo Gaturro</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/assets/css/mundo.css" rel="stylesheet" />
-
-    <!-- BEGIN comScore Inline Tag 1.1111.15 -->
-    <script type="text/javascript">
-      // <![CDATA[
-      function udm_(a) {
-        var b = "comScore=",
-          c = document,
-          d = c.cookie,
-          e = "",
-          f = "indexOf",
-          g = "substring",
-          h = "length",
-          i = 2048,
-          j,
-          k = "&ns_",
-          l = "&",
-          m,
-          n,
-          o,
-          p,
-          q = window,
-          r = q.encodeURIComponent || escape;
-        if (d[f](b) + 1)
-          for (o = 0, n = d.split(";"), p = n[h]; o < p; o++)
-            ((m = n[o][f](b)), m + 1 && (e = l + unescape(n[o][g](m + b[h]))));
-        ((a +=
-          k +
-          "_t=" +
-          +new Date() +
-          k +
-          "c=" +
-          (c.characterSet || c.defaultCharset || "") +
-          "&c8=" +
-          r(c.title) +
-          e +
-          "&c7=" +
-          r(c.URL) +
-          "&c9=" +
-          r(c.referrer)),
-          a[h] > i &&
-            a[f](l) > 0 &&
-            ((j = a[g](0, i - 8).lastIndexOf(l)),
-            (a = (a[g](0, j) + k + "cut=" + r(a[g](j + 1)))[g](0, i))),
-          c.images
-            ? ((m = new Image()), q.ns_p || (ns_p = m), (m.src = a))
-            : c.write(
-                "<",
-                "p",
-                "><",
-                'img src="',
-                a,
-                '" height="1" width="1" alt="*"',
-                "><",
-                "/p",
-                ">",
-              ));
-      }
-      udm_(
-        "http" +
-          (document.location.href.charAt(4) == "s" ? "s://sb" : "://b") +
-          ".scorecardresearch.com/b?c1=2&c2=6906409&ns_site=mundo-gaturro&name=nacional.registro",
-      );
-      // ]]>
-    </script>
-    <noscript
-      ><p>
-        <img
-          src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6906409&amp;ns_site=mundo-gaturro&amp;name=nacional.registro"
-          height="1"
-          width="1"
-          alt="*"
-        /></p
-    ></noscript>
-    <!-- END comScore Inline Tag 1.1111.15 -->
-    <script language="JavaScript" type="text/javascript">
-      <!--
-      var eplDoc = document;
-      var eplLL = false;
-
-      var eS1 = "clarin.img.e-planning.net";
-      var eplArgs = {
-        iIF: 1,
-        sV: schemeLocal() + "://ads.e-planning.net/",
-        vV: "4",
-        sI: "902b",
-        sec: "InicioSesion",
-        eIs: ["Right1x300x250"],
-      };
-
-      function eplCheckStart() {
-        if (document.epl) {
-          var e = document.epl;
-
-          if (e.eplReady()) {
-            return true;
-          } else {
-            e.eplInit(eplArgs);
-
-            if (eplArgs.custom) {
-              for (var s in eplArgs.custom) {
-                document.epl.setCustomAdShow(s, eplArgs.custom[s]);
-              }
-            }
-
-            return e.eplReady();
-          }
-        } else {
-          if (eplLL) return false;
-
-          if (!document.body) return false;
-          var eS2;
-          var dc = document.cookie;
-
-          var cookieName =
-            ("https" === schemeLocal() ? "EPLSERVER_S" : "EPLSERVER") + "=";
-
-          var ci = dc.indexOf(cookieName);
-
-          if (ci != -1) {
-            ci += cookieName.length;
-            var ce = dc.indexOf(";", ci);
-
-            if (ce == -1) ce = dc.length;
-
-            eS2 = dc.substring(ci, ce);
-          }
-
-          var eIF = document.createElement("IFRAME");
-
-          eIF.src = "about:blank";
-          eIF.id = "epl4iframe";
-          eIF.name = "epl4iframe";
-
-          eIF.width = 0;
-          eIF.height = 0;
-          eIF.style.width = "0px";
-          eIF.style.height = "0px";
-
-          eIF.style.display = "none";
-          document.body.appendChild(eIF);
-
-          var eIFD = eIF.contentDocument ? eIF.contentDocument : eIF.document;
-
-          eIFD.open();
-          eIFD.write(
-            "<html><head><title>e-planning</title></head><bo" +
-              "dy></bo" +
-              "dy></html>",
-          );
-          eIFD.close();
-
-          var s = eIFD.createElement("SCRIPT");
-
-          s.src =
-            schemeLocal() + "://" + (eS2 ? eS2 : eS1) + "/layers/epl-41.js";
-
-          eIFD.body.appendChild(s);
-
-          if (!eS2) {
-            var ss = eIFD.createElement("SCRIPT");
-
-            ss.src = schemeLocal() + "://ads.e-planning.net/egc/4/41a3";
-
-            eIFD.body.appendChild(ss);
-          }
-
-          eplLL = true;
-
-          return false;
-        }
-      }
-
-      eplCheckStart();
-
-      function eplSetAdM(eID, custF) {
-        if (eplCheckStart()) {
-          if (custF) {
-            document.epl.setCustomAdShow(eID, eplArgs.custom[eID]);
-          }
-
-          document.epl.showSpace(eID);
-        } else {
-          var efu =
-            'eplSetAdM("' + eID + '", ' + (custF ? "true" : "false") + ");";
-
-          setTimeout(efu, 250);
-        }
-      }
-
-      function eplAD4M(eID, custF) {
-        document.write('<div id="eplAdDiv' + eID + '"></div>');
-
-        if (custF) {
-          if (!eplArgs.custom) {
-            eplArgs.custom = {};
-          }
-
-          eplArgs.custom[eID] = custF;
-        }
-
-        eplSetAdM(eID, custF ? true : false);
-      }
-
-      function schemeLocal() {
-        if (document.location.protocol) {
-          protocol = document.location.protocol;
-        } else {
-          protocol = window.top.location.protocol;
-        }
-
-        if (protocol) {
-          if (protocol.indexOf("https") !== -1) {
-            return "https";
-          } else {
-            return "http";
-          }
-        }
-      }
-      //-->
-    </script>
-    <script
-      bis_use="true"
-      type="text/javascript"
-      charset="utf-8"
-      nonce=""
-      data-dynamic-id="66be6aca-7ffc-4103-ae11-4de9686fcc20"
-      src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/101.js"
-    ></script>
   </head>
-  <body
-    class="pageBody"
-    __processed_e02c7672-afbc-4f71-ad16-31a6c8a0ef02__="true"
-    bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjAuNDciLCJzY29yZSI6MjAwNDcwfV0="
-    bis_skin_checked="1"
-  >
-    <div id="app" bis_skin_checked="1">
-      <nav class="navbar navbar-default navbar-static-top">
-        <div class="container" bis_skin_checked="1">
-          <div class="navbar-header" bis_skin_checked="1">
-            <!-- Branding Image -->
-            <a
-              href="https://registro.mundogaturro.com/"
-              class="btn btn-head"
-              bis_skin_checked="1"
-              >No tengo usuario. Crea tu usuario</a
-            >
-          </div>
+  <body class="pageBody">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="btn btn-head" href="https://registro.mundogaturro.com/">
+          No tengo usuario. Crea tu usuario
+        </a>
+        <button type="button" class="btn btn-head" data-bs-toggle="modal" data-bs-target="#videoModal">
+          Videotour
+        </button>
+      </div>
+    </nav>
 
-          <div
-            class="collapse navbar-collapse"
-            id="app-navbar-collapse"
-            bis_skin_checked="1"
-          >
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-              &nbsp;
-            </ul>
+    <a href="//www.mundogaturro.com">
+      <div class="mg_register_brand">
+        <img src="/assets/img/mg_register_mundo_gaturro.png" alt="Gaturro" />
+      </div>
+    </a>
 
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <button
-                  href="//www.youtube.com/watch?v=Crl_8X1YU-Y"
-                  type="button"
-                  class="btn btn-head lightbox"
-                  data-toggle="lightbox"
-                >
-                  Videotour
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <a href="//www.mundogaturro.com" bis_skin_checked="1">
-        <div class="mg_register_brand" bis_skin_checked="1">
-          <img src="/assets/img/mg_register_mundo_gaturro.png" alt="Gaturro" />
-        </div>
-      </a>
-
-      <div class="container" style="margin-top: 52px" bis_skin_checked="1">
-        <div class="row" bis_skin_checked="1">
-          <div class="col-md-6 col-md-offset-3" bis_skin_checked="1">
-            <div class="panel panel-default" bis_skin_checked="1">
+    <div class="container" style="margin-top: 52px;">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="panel panel-default">
               <div class="panel-body loginBoxMobile" bis_skin_checked="1">
                 <form
                   id="formregister"
@@ -386,7 +84,8 @@
                       <button
                         id="logingaturro"
                         type="submit"
-                        class="btn btn-play btn-lg"
+                        class="btn btn-play btn-lg senal-fraude"
+                        data-feedback="¡Bien visto! Si te fijás en el atributo 'action' del formulario, los datos se enviaban a un servidor desconocido en lugar del oficial."
                       >
                         <strong>¡JUGAR AHORA!</strong>
                       </button>
@@ -402,7 +101,9 @@
                   </div>
                   <div class="col-md-12 text-center" bis_skin_checked="1">
                     <a
-                      href="https://login.mundogaturro.com/recoverypassword"
+                      href="#"
+                      class="senal-fraude"
+                      data-feedback="¡Exacto! Los enlaces en páginas de phishing suelen redirigir a sitios extraños o simplemente recargan la página."
                       bis_skin_checked="1"
                       >¿Olvidaste o caducó tu contraseña? Consigue una nueva</a
                     >
@@ -594,19 +295,37 @@
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script
-      src="/js/app.js?id=758bdd908893f883e9e2"
-      type="text/javascript"
-    ></script>
+    <!-- Botón Naranja de Phishing -->
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 m-4 shadow-lg" style="z-index: 9999;">
+      ⚠️ Simulación de phishing
+    </button>
 
-    <iframe
-      src="about:blank"
-      id="epl4iframe"
-      name="epl4iframe"
-      width="0"
-      height="0"
-      style="width: 0px; height: 0px; display: none"
-    ></iframe>
+    <!-- Toast para feedback -->
+    <div id="feedback-toast" class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 9999; display: none;">
+        <div class="alert alert-success fw-bold shadow" role="alert" id="feedback-mensaje">
+        </div>
+    </div>
+
+    <!-- Modal para Videotour -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLabel">Videotour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/Crl_8X1YU-Y" title="Videotour" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/mundo.js"></script>
   </body>
 </html>
