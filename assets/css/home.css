@@ -1,0 +1,6 @@
+.hero-yt {
+  position: absolute;
+  border: 0;
+  opacity: 90%;
+  pointer-events: none;
+}
