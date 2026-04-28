@@ -1,10 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    /* Imagen de fondo con una capa blanca traslúcida (0.85) para legibilidad */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../img/fondo.webp');
+    /* Usamos la variable --bg-overlay, si no existe, usa el blanco por defecto */
+    background-image: linear-gradient(var(--bg-overlay, rgba(255, 255, 255, 0.85)), var(--bg-overlay, rgba(255, 255, 255, 0.85))), url('../img/fondo.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /* Definimos el color claro por defecto */
+    --bg-overlay: rgba(255, 255, 255, 0.85);
 }
 
 .hero-blog {
@@ -15,10 +17,10 @@ body {
 }
 
 .blog-card {
-    /* Color original con 70% de opacidad para ver el fondo */
-    background: rgba(231, 245, 230, 0.7);
+    /* Color original verdito claro como variable */
+    background: var(--bg-card, rgba(231, 245, 230, 0.7));
     transition: transform 0.3s ease;
-    opacity: 1; /* Cambiado a 1 para asegurar visibilidad inmediata */
+    opacity: 1; 
 }
 
 .blog-card:hover {
@@ -47,17 +49,41 @@ body {
 }
 
 .sidebar {
-    /* Sidebar traslúcido */
-    background: rgba(207, 218, 216, 0.6);
+    /* Color original grisáceo como variable */
+    background: var(--bg-sidebar, rgba(207, 218, 216, 0.6));
     padding-block: 100px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-top: 60px; /* Separa el sidebar de las fotos de arriba */
-    margin-bottom: 80px; /* Separa el sidebar del footer */
+    margin-top: 60px; 
+    margin-bottom: 80px; 
 }
+
 .comentario {
-    /* Comentarios un poco más transparentes */
-    background: rgba(236, 249, 248, 0.5);
+    /* Color original celeste clarito como variable */
+    background: var(--bg-comentario, rgba(236, 249, 248, 0.5));
     padding: 15px;
     border-radius: 8px;
+}
+
+.info-modal-custom {
+    /* Blanco fijo como variable */
+    background-color: var(--bg-modal, rgba(255, 255, 255, 0.9)) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* --- DARK MODE (Se activa con el botón de Bootstrap) --- */
+[data-bs-theme="dark"] body {
+    /* Fondo oscuro para el body */
+    --bg-overlay: rgba(33, 37, 41, 0.92);
+    /* Fondo oscuro para las tarjetas de los posts */
+    --bg-card: rgba(43, 48, 53, 0.85);
+    /* Fondo oscuro para la barra lateral */
+    --bg-sidebar: rgba(33, 37, 41, 0.8);
+    /* Fondo más oscuro para los comentarios */
+    --bg-comentario: rgba(52, 58, 64, 0.6);
+    /* Fondo oscuro para el cartelito del modal */
+    --bg-modal: rgba(33, 37, 41, 0.95);
 }
