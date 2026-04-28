@@ -1,11 +1,17 @@
 /* --- 1. FONDO GENERAL (El efecto "Lavado") --- */
 body {
-  /* Capa blanca muy potente (0.92) para que la imagen casi no se note en el cuerpo */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('../img/fondodestinos.webp');
+  background-image: linear-gradient(var(--bg-overlay, rgba(255, 255, 255, 0.92)), var(--bg-overlay, rgba(255, 255, 255, 0.92))), url('../img/fondodestinos.webp');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
-  margin: 0;
+  background-attachment: fixed;
+  /* Definimos el color por defecto (claro) */
+  --bg-overlay: rgba(255, 255, 255, 0.92);
+}
+
+/* Y acá está la magia para el Dark Mode de Bootstrap */
+[data-bs-theme="dark"] body {
+  /* Cuando se activa el modo oscuro, el overlay se vuelve gris oscuro/negro */
+  --bg-overlay: rgba(33, 37, 41, 0.95);
 }
 
 /* --- 2. EL BANNER (La "Ventana" clara) --- */
@@ -50,4 +56,38 @@ body {
 /* Pequeña animación cuando pasas el mouse por la columna */
 .col-md-4:hover i {
   transform: translateY(-10px) scale(1.1);
+}
+
+
+/* ---  SPRITE PARA MEDIOS DE PAGO --- */
+.sprite-pago {
+  display: inline-block;
+  width: 50px;  /* El ancho que le dimos a cada logo */
+  height: 35px; /* El alto de cada logo */
+  
+  /* Llamamos a la imagen que contiene todos los logos juntos */
+  background-image: url('../img/sprite-pagos.png');
+  background-repeat: no-repeat;
+  
+  /* Un bordecito suave para que parezcan tarjetas de verdad */
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: white; /* Por si tu PNG tiene fondo transparente */
+}
+
+/* Movemos la imagen de fondo 50px a la izquierda por cada tarjeta */
+.tarjeta-visa {
+  background-position: 0 0; 
+}
+
+.tarjeta-master {
+  background-position: -50px 0; 
+}
+
+.tarjeta-naranja {
+  background-position: -100px 0; 
+}
+
+.tarjeta-mp {
+  background-position: -150px 0; 
 }
