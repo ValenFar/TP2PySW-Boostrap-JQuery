@@ -20,3 +20,13 @@
 .fst-italic {
     max-width: 800px;
 }
+
+/* Animación de cards */
+.card-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.card-animate.visible {
+    opacity: 1;
+}
