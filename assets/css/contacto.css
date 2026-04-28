@@ -1,0 +1,190 @@
+
+/* ── FUENTE ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;600&display=swap');
+
+/* ── VARIABLES ── */
+:root {
+  --accent:      var(--layouts-bg-custom, #17734a);
+  --accent-glow: rgba(23,115,74,.25);
+  --radius:      14px;
+  --t:           .22s ease;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-image:
+    linear-gradient(var(--bg-overlay, rgba(245,250,247,.93)),
+                    var(--bg-overlay, rgba(245,250,247,.93))),
+    url('../img/Cerro_de_los_siete_colores.jpg');
+  background-size: cover;
+  background-position: center;
+}
+[data-bs-theme="dark"] body {
+  --bg-overlay: rgba(15,22,18,.94);
+}
+
+.hero-contacto {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('../img/Cerro_de_los_siete_colores.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  height: 48vh;
+  min-height: 260px;
+}
+
+.hero-contacto h1 {
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
+
+.caja-translucida {
+  background: rgba(255,255,255,.90);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.6);
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+  transition: box-shadow var(--t);
+}
+.caja-translucida:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.13);
+}
+[data-bs-theme="dark"] .caja-translucida {
+  background: rgba(20,32,26,.90);
+  border-color: rgba(255,255,255,.07);
+}
+
+.caja-translucida .bi {
+  transition: transform var(--t);
+}
+.caja-translucida:hover .bi {
+  transform: translateY(-3px);
+}
+
+.form-label {
+  font-size: .72rem;
+  letter-spacing: .06em;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color var(--t), box-shadow var(--t);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-control.is-valid,
+.form-select.is-valid,
+.form-control.is-invalid,
+.form-select.is-invalid {
+  background-image: none;
+  padding-right: .9rem;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+
+.contacto-feedback {
+  font-size: .75rem;
+  font-weight: 500;
+  min-height: 1rem;
+  margin-top: .25rem;
+}
+.contacto-feedback.ok  { color: #198754; }
+.contacto-feedback.err { color: #dc3545; }
+[data-bs-theme="dark"] .contacto-feedback.ok  { color: #3fb950; }
+[data-bs-theme="dark"] .contacto-feedback.err { color: #f85149; }
+#charCount { font-size: .75rem; }
+#charCount.warn { color: #e08b00; font-weight: 600; }
+#charCount.over { color: #dc3545; font-weight: 700; }
+
+/* 
+   TÍTULO Y LINKS
+ */
+.contacto-titulo-form {
+  font-family: 'Playfair Display', serif;
+  color: var(--accent);
+}
+.contacto-link {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+#btnSubmit {
+  border-radius: 50px;
+  transition: transform var(--t), box-shadow var(--t), opacity var(--t);
+}
+#btnSubmit:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px var(--accent-glow);
+}
+#btnSubmit:disabled { opacity: .42; cursor: not-allowed; }
+
+#spinnerOverlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,.6);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .75rem;
+}
+#spinnerOverlay.activo { display: flex; }
+#spinnerOverlay .spinner-border {
+  width: 3rem; height: 3rem;
+  color: var(--accent) !important;
+}
+#spinnerOverlay p { color: rgba(255,255,255,.85); }
+
+.modal-content {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.contacto-icon-ok { color: var(--accent); }
+
+[data-bs-theme="dark"] .modal-content {
+  background: #141f18;
+  border-color: rgba(255,255,255,.08);
+}
+
+/*
+   ANIMACIÓN DE ENTRADA (CSS puro, sin JS)
+   Solo en las 3 cards info — liviana y rápida.
+ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.row.g-4 .col-12:nth-child(1) .caja-translucida { animation: fadeUp .4s ease .05s both; }
+.row.g-4 .col-12:nth-child(2) .caja-translucida { animation: fadeUp .4s ease .12s both; }
+.row.g-4 .col-12:nth-child(3) .caja-translucida { animation: fadeUp .4s ease .20s both; }
+
+/*
+   RESPONSIVE
+   Bootstrap maneja col-*, d-*, text-* breakpoints.
+   Solo ajustes puntuales que Bootstrap no cubre.
+ */
+@media (max-width: 576px) {
+  .hero-contacto { height: 40vh; }
+  #btnSubmit { width: 100%; }
+}
