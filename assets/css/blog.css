@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Imagen de fondo con una capa blanca traslúcida (0.85) para legibilidad */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../img/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-blog {
+    font-family:center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../img/ejemploWEBP.webp) center/cover;
+    height: 60vh;
+}
+
+.blog-card {
+    /* Color original con 70% de opacidad para ver el fondo */
+    background: rgba(231, 245, 230, 0.7);
+    transition: transform 0.3s ease;
+    opacity: 1; /* Cambiado a 1 para asegurar visibilidad inmediata */
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    cursor: pointer; /* Transforma el puntero en manito al pasar sobre la imagen */
+}
+
+.filter-btn {
+    padding: 10px 40px;
+    margin: 8px; /* Separa los botones entre sí */
+    transition: transform 0.2s ease; /* Suaviza el movimiento del botón */
+}
+
+.filter-btn:hover {
+    transform: translateY(-5px); /* Desplaza el botón un poquito hacia arriba */
+}
+
+.info-modal-custom {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar {
+    /* Sidebar traslúcido */
+    background: rgba(207, 218, 216, 0.6);
+    padding-block: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 60px; /* Separa el sidebar de las fotos de arriba */
+    margin-bottom: 80px; /* Separa el sidebar del footer */
+}
+.comentario {
+    /* Comentarios un poco más transparentes */
+    background: rgba(236, 249, 248, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}

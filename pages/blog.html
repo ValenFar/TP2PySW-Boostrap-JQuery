@@ -13,19 +13,155 @@
     /><!-- Boostrap Icon-->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/blog.css" />
-    <title>Document</title>
+    <title>Blog Turismo Jujuy</title>
   </head>
-  <body>
-    <div id="navbar-placeholder"></div>
-    <!--NavBar con JQuery-->
-    <main class="container my-5">
-      <h1>Blog</h1>
+ <body>
+      <div id="navbar-placeholder"></div>
+
+    <header class="hero-blog text-center text-white d-flex align-items-center justify-content-center">
+        <div>
+            <h1>Blog destinos</h1>
+            <p>Descubrí paisajes, cultura y aventura en el norte argentino</p>
+        </div>
+    </header>
+
+    <!-- FILTROS -->
+    <section class="container text-center my-5">
+        <button class="btn btn-primary filter-btn" data-category="all">Todos</button>
+        <button class="btn btn-success filter-btn" data-category="paisajes">Paisajes</button>
+        <button class="btn btn-warning filter-btn" data-category="cultura">Cultura</button>
+        <button class="btn btn-danger filter-btn" data-category="aventura">Aventura</button>
+    </section>
+
+    <!-- BLOG -->
+    <main class="container">
+        <div class="row">
+            <section class="col-12 offset-md-1 col-md-10" id="blog-container">
+                <div class="row g-4">
+
+                  <!-- Artículo 1 -->
+                  <article class="col-md-6 blog-item paisajes" data-info="El Cerro de los Siete Colores es una de las maravillas naturales más fotografiadas de Argentina. Su origen geológico se remonta a unos 750 millones de años. Se recomienda visitarlo por la mañana, cuando la luz del sol resalta con mayor intensidad sus estratos coloridos.">
+                        <div class="card blog-card h-100">
+                          <img src="../assets/img/purmamarca.webp" class="card-img-top" alt="Cerro de los Siete Colores">
+                          <div class="card-body">
+                              <h5 class="card-title">Cerro de los Siete Colores</h5>
+                              <p class="card-text"> Purmamarca es un pintoresco pueblo ubicado en la provincia de Jujuy, en el corazón de la espectacular Quebrada de Humahuaca, un lugar declarado Patrimonio de la Humanidad por la UNESCO y famoso por elCerro de los Siete Colores. Las montañas ofrecen un paisaje insólito y la pequeña localidad combina la riqueza cultural andina con arquitectura colonial.</p>
+                          </div>
+                        </div>
+                  </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="col-md-6 blog-item cultura" data-info="El Pucará de Tilcara es una fortaleza construida por los tilcaras, una parcialidad de los omaguacas. Es uno de los sitios arqueológicos más importantes de la Quebrada, ofreciendo una vista panorámica única del valle y permitiendo entender cómo vivían los antiguos pobladores.">
+                        <div class="card blog-card h-100">
+                            <img src="../assets/img/tilcara.webp" class="card-img-top" alt="Pucará de Tilcara">
+                            <div class="card-body">
+                                <h5 class="card-title">Tilcara y su riqueza cultural</h5>
+                                <p class="card-text">Historia, tradiciones y patrimonio en el corazón de la Quebrada. Las ruinas preincas y los animados festivales son solo algunos de los puntos destacables que ofrece Tilcara. En las afueras de la pequeña ciudad argentina, el Pucará de Tilcara atrae a aficionados a la arqueología y turistas a los que les intrigan las antiguas civilizaciones. El Pucará de Tilcara, las ruinas de piedra de una tribu de guerreros, proporciona una perspectiva de los triunfos batallas diarias de las personas que prosperaron en la zona hace más de 10 000 años.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                   <!-- Artículo 3 -->
+                    <article class="col-md-6 blog-item aventura" data-info="A más de 3.400 metros sobre el nivel del mar, este desierto de sal es el tercero más grande del mundo. Aquí podrás observar el proceso de extracción de sal y tomarte las famosas fotos de perspectiva. Es un lugar clave para los amantes de la fotografía y la aventura.">
+                        <div class="card blog-card h-100">
+                            <img src="../assets/img/Salinas.webp" class="card-img-top" alt="Salinas Grandes">
+                            <div class="card-body">
+                                <h5 class="card-title">Aventura en Salinas Grandes</h5>
+                                <p class="card-text">Recorridos inolvidables en uno de los paisajes más impactantes del país. Este vasto desierto de sal, ubicado a más de 3.400 metros sobre el nivel del mar, es una joya escondida entre las provincias de Jujuy y Salta, y representa no solo un espectáculo visual inigualable, sino también una ventana abierta a la historia geológica de la región.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 4 -->
+                    <article class="col-md-6 blog-item paisajes" data-info="Conocido como el Cerro de los 14 Colores, el Hornocal ofrece una vista majestuosa de formaciones calizas. El mirador se encuentra a 4.350 metros de altura, por lo que se recomienda subir despacio y disfrutar del atardecer, cuando los colores se vuelven más vívidos.">
+                        <div class="card blog-card h-100">
+                            <img src="../assets/img/humahuaca.webp" class="card-img-top" alt="Serranía del Hornocal">
+                            <div class="card-body">
+                                <h5 class="card-title">Serranía del Hornocal</h5>
+                                <p class="card-text">El imponente cerro de los 14 colores, una maravilla natural cerca de Humahuaca. Este cerro sorprende a propios y extraños con su paleta cromática única, resultado de millones de años de procesos geológicos. Su acceso, aunque desafiante, recompensa al visitante con vistas panorámicas que difícilmente se olvidan.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 5 -->
+                    <article class="col-md-6 blog-item paisajes" data-info="Ubicado cerca de Cusi Cusi, este valle ofrece formaciones geológicas de color rojo intenso que simulan un paisaje lunar. Es uno de los secretos mejor guardados de la Puna Jujeña, ideal para quienes buscan salirse de las rutas turísticas tradicionales.">
+                        <div class="card blog-card h-100">
+                            <img src="../assets/img/valleluna.webp" class="card-img-top" alt="Valle de la Luna">
+                            <div class="card-body">
+                                <h5 class="card-title">Valle de la Luna (Cusi Cusi)</h5>
+                                <p class="card-text">Un paisaje de otro mundo con formaciones rojizas y vistas espectaculares en la Puna jujeña. El Valle de la Luna está posicionado en una amplia hoyada labrada fundamentalmente sobre distintos tipos de arcillas, rodeados de una comarca formada por basaltos, escoria y lava gris y negra, con riscos y farallones de origen volcánico decon alturas de hasta 800 metros. Dada la extrema aridez, el área casi no posee vegetación, por lo cual la primera capa de suelo no tiene la defensa que le pudieran presentar las raíces de las plantas.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 6 -->
+                    <article class="col-md-6 blog-item aventura" data-info="Las Yungas representan la selva de montaña de Jujuy. En el Parque Nacional Calilegua podrás encontrar una biodiversidad increíble, desde jaguares hasta cientos de especies de aves, en un entorno de nubes y vegetación exuberante totalmente opuesto a la Quebrada.">
+                        <div class="card blog-card h-100">
+                            <img src="../assets/img/yungas.webp" class="card-img-top" alt="Selva de las Yungas">
+                            <div class="card-body">
+                                <h5 class="card-title">Selva de las Yungas</h5>
+                                <p class="card-text">Explorá la biodiversidad y el verde intenso del Parque Nacional Calilegua y sus senderos. La zona de yungas es dueña de paisajes de selva que parecen salidos de películas, y en toda su extensión - además de muchos destinos naturales - comprende los poblados de: San Francisco, Valle Grande, Valle Colorado, Pampichuela, San Lucas, Santa Ana, Caspalá, Calilegua, Caimancito, Palma Sola, Yuto, San Pedro de Jujuy, Fraile Pintado, Libertador General San Martín, y El Fuerte</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- SIDEBAR -->
+            <aside class="col-12 mt-5 offset-md-1 col-md-10">
+                <div class="sidebar p-4">
+                    <h4>Comentarios recientes</h4>
+                    <div class="comentario border-bottom pb-2 mb-3">
+                        <strong>Sofia V. <span class="text-warning">★★★★★</span></strong>
+                        <p class="mb-1">"Espectacular el Hornocal. Fuimos en 4x4 y la vista de los 14 colores es de otro planeta. ¡Ojo con el apunamiento, lleven hojas de coca!"</p>
+                        <small class="text-muted">Hace 2 días</small>
+                    </div>
+                    <div class="comentario border-bottom pb-2 mb-3">
+                        <strong>Marcos L. <span class="text-warning">★★★★★</span></strong>
+                        <p class="mb-1">"Cusi Cusi es difícil de llegar pero vale totalmente la pena. El Valle de la Luna jujeño no tiene nada que envidiarle a otros paisajes del mundo."</p>
+                        <small class="text-muted">Hace 5 días</small>
+                    </div>
+                    <div class="comentario border-bottom pb-2 mb-3">
+                        <strong>Elena R. <span class="text-warning">★★★★☆</span></strong>
+                        <p class="mb-1">"No se pierdan el Pucará en Tilcara. La historia que se respira ahí es increíble. Vayan temprano para evitar el sol fuerte del mediodía."</p>
+                        <small class="text-muted">Hace 1 semana</small>
+                    </div>
+                    <div class="comentario">
+                        <strong>Javier M. <span class="text-warning">★★★★★</span></strong>
+                        <p class="mb-1">"La hospitalidad en Humahuaca es lo mejor. Las peñas nocturnas son una experiencia que hay que vivir sí o sí. ¡Volveré pronto!"</p>
+                        <small class="text-muted">Hace 2 semanas</small>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
-    <div id="footer-placeholder"></div>
-    <!--Footer con JQuery-->
-  </body>
+
+    <!-- Modal de Información -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content info-modal-custom">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="infoModalLabel">Título del Destino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="infoModalBody">Información detallada...</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="destinos.html#precio" class="btn btn-primary w-100">Ver precios</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div id="footer-placeholder"></div>
+</body> 
+
+<!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/main.js"></script>
   <script src="../assets/js/blog.js"></script>
+  <script src="../assets/js/main.js"></script>
+
 </html>
