@@ -1,0 +1,46 @@
+/* Colores para el Modo Claro (por defecto) */
+[data-bs-theme="light"] {
+    --layouts-bg-custom: #17734a; /* Un verde Jujuy */
+    --layouts-link-color: #ffffff;
+    --layouts-text-color: #ffffff;
+    
+}
+
+/* Colores para el Modo Oscuro */
+[data-bs-theme="dark"] {
+    --layouts-bg-custom: #1a1a1a; /* Un gris casi negro */
+    --layouts-link-color: #ffffff;
+    --layouts-text-color: #ffffff;
+}
+
+/* Aplicamos la variable a una clase personalizada */
+.layouts-custom {
+    background-color: var(--layouts-bg-custom) !important;
+    transition: background-color 0.3s ease; /* Para que el cambio no sea brusco */
+    color: var(--layouts-text-color) ;
+}
+
+.layouts-custom .nav-link {
+    color: var(--layouts-link-color) !important;
+    
+}
+
+.layouts-custom .navbar-brand,
+.layouts-custom .navbar-brand:hover,
+.layouts-custom .navbar-brand:focus {
+    color: var(--layouts-text-color) !important;
+}
+
+.layouts-custom .text-body,
+.layouts-custom .text-body-secondary,
+.layouts-custom p,
+.layouts-custom label,
+.layouts-custom h1,
+.layouts-custom h2,
+.layouts-custom h3,
+.layouts-custom h4,
+.layouts-custom h5,
+.layouts-custom h6,
+.layouts-custom .small {
+    color: var(--layouts-text-color) !important;
+}

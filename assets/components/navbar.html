@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Turismo 2026</a>
+<nav class="navbar layouts-custom navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid nav-bar container ">
+    <a class="navbar-brand fw-bold" href="/index.html">Turismo 2026</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,13 +12,18 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto fw-medium">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="/index.html"
+            >Inicio</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pages/agencias.html">Agencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/blog.html">Blog</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -31,7 +36,9 @@
             Destinos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/pages/destinos.html">Ver Todos</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/destinos.html">Ver Todos</a>
+            </li>
             <li><a class="dropdown-item" href="#">Destino1</a></li>
             <li><a class="dropdown-item" href="#">Destino2</a></li>
           </ul>
@@ -40,6 +47,10 @@
           <a class="nav-link" href="/pages/contacto.html">Contacto</a>
         </li>
       </ul>
+
+      <button onclick="cambiarTema()" class="btn nav-link ms-lg-auto" aria-label="Cambiar tema">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
     </div>
   </div>
 </nav>
