@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciando Sesión - Mundo Gaturro</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/mundo.css" rel="stylesheet" />
+  </head>
+  <body class="pageBody">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="btn btn-head" href="https://registro.mundogaturro.com/">
+          No tengo usuario. Crea tu usuario
+        </a>
+        <button type="button" class="btn btn-head" data-bs-toggle="modal" data-bs-target="#videoModal">
+          Videotour
+        </button>
+      </div>
+    </nav>
+
+    <a href="//www.mundogaturro.com">
+      <div class="mg_register_brand">
+        <img src="/assets/img/mg_register_mundo_gaturro.png" alt="Gaturro" />
+      </div>
+    </a>
+
+    <div class="container" style="margin-top: 52px;">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="panel panel-default">
+              <div class="panel-body loginBoxMobile" bis_skin_checked="1">
+                <form
+                  id="formregister"
+                  class="form-horizontal"
+                  role="form"
+                  method="POST"
+                  action="https://login.mundogaturro.com/webauth"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="1erd3JshyIZCcHn5nxSaycTSILzq1OPjDi3cyMiC"
+                  />
+                  <h1 class="text-center">Bienvenido a Mundo Gaturro</h1>
+                  <div class="clearfix" bis_skin_checked="1">&nbsp;</div>
+
+                  <div class="form-group" bis_skin_checked="1">
+                    <div class="col-md-8 col-md-offset-2" bis_skin_checked="1">
+                      <input
+                        id="username"
+                        type="text"
+                        class="form-control"
+                        name="username"
+                        maxlength="16"
+                        placeholder="Nombre de Gaturro"
+                        value=""
+                      />
+                      <span
+                        class="hidden negrita help-block mg_danger text-center _username_errors"
+                      >
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group" bis_skin_checked="1">
+                    <div class="col-md-8 col-md-offset-2" bis_skin_checked="1">
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        placeholder="Contraseña"
+                      />
+                      <span
+                        class="hidden negrita help-block mg_danger text-center _password_errors"
+                      >
+                      </span>
+                    </div>
+                  </div>
+                  <div class="clearfix" bis_skin_checked="1">&nbsp;</div>
+                  <div class="form-group text-center" bis_skin_checked="1">
+                    <div class="col-md-8 col-md-offset-2" bis_skin_checked="1">
+                      <button
+                        id="logingaturro"
+                        type="submit"
+                        class="btn btn-play btn-lg senal-fraude"
+                        data-feedback="¡Bien visto! Si te fijás en el atributo 'action' del formulario, los datos se enviaban a un servidor desconocido en lugar del oficial."
+                      >
+                        <strong>¡JUGAR AHORA!</strong>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center" bis_skin_checked="1">
+                    <a
+                      href="https://login.mundogaturro.com/activate"
+                      bis_skin_checked="1"
+                      >¡Activa tu cuenta!</a
+                    >
+                  </div>
+                  <div class="col-md-12 text-center" bis_skin_checked="1">
+                    <a
+                      href="#"
+                      class="senal-fraude"
+                      data-feedback="¡Exacto! Los enlaces en páginas de phishing suelen redirigir a sitios extraños o simplemente recargan la página."
+                      bis_skin_checked="1"
+                      >¿Olvidaste o caducó tu contraseña? Consigue una nueva</a
+                    >
+                  </div>
+                  <div class="col-md-12 text-center" bis_skin_checked="1">
+                    <a
+                      href="https://login.mundogaturro.com/fogemail"
+                      bis_skin_checked="1"
+                      >¿Olvidaste tu email? ¡Actualizalo!</a
+                    >
+                  </div>
+
+                  <h4 class="text-center">
+                    ¿Necesitas un cambio? ¡Ahora puedes cambiar tu nombre de
+                    usuario!
+                  </h4>
+                  <div class="panel-body text-center" bis_skin_checked="1">
+                    <div class="col-md-8 col-md-offset-2" bis_skin_checked="1">
+                      <a
+                        href="//www.mundogaturro.com/shop"
+                        class="btn btn-registro"
+                        bis_skin_checked="1"
+                        ><strong>Cambiar nombre</strong></a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="ads" class="text-center" bis_skin_checked="1">
+                <script type="text/javascript">
+                  eplAD4M("Right1x300x250");
+                </script>
+                <div id="eplAdDivRight1x300x250" bis_skin_checked="1"></div>
+              </div>
+              <div class="panel-body registerbox" bis_skin_checked="1">
+                <h4 class="text-center">
+                  ¿Todavía no tienes tu cuenta? Es gratis!
+                </h4>
+                <div class="form-group text-center" bis_skin_checked="1">
+                  <div class="col-md-8 col-md-offset-2" bis_skin_checked="1">
+                    <a
+                      href="https://registro.mundogaturro.com/"
+                      class="btn btn-registro"
+                      bis_skin_checked="1"
+                      ><strong>Crea tu Gaturro</strong></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <span class="negrita help-block text-center">
+                Si tienes algun inconveniente, no olvides escribir a
+                <strong>info@mundogaturro.com</strong> explicando la situación.
+                <br />
+                O puedes contactar a los moderadores por Twitter
+              </span>
+              <div class="col-md-12 text-center" bis_skin_checked="1">
+                <a
+                  href="https://login.mundogaturro.com/fogemail"
+                  bis_skin_checked="1"
+                  >Contactar a Moderadores</a
+                >
+              </div>
+
+              <div class="panel-body" bis_skin_checked="1">
+                <div class="socialincons" bis_skin_checked="1">
+                  <a
+                    href="//bit.ly/e7UvNQ"
+                    class="twitter"
+                    target="_blank"
+                    bis_skin_checked="1"
+                  >
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="//on.fb.me/fgkfq5"
+                    class="facebook"
+                    target="_blank"
+                    bis_skin_checked="1"
+                  >
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="//plus.google.com/+mundogaturro/posts"
+                    class="google"
+                    target="_blank"
+                    bis_skin_checked="1"
+                  >
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="//www.youtube.com/user/MundoGaturroOficial"
+                    class="youtube"
+                    target="_blank"
+                    bis_skin_checked="1"
+                  >
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+                <div bis_skin_checked="1">
+                  <div class="legaltext" bis_skin_checked="1">
+                    <a
+                      href="//qr.afip.gob.ar/?qr=yuapJTz-0D5liG0cwKVw9g,,"
+                      target="_F960AFIPInfo"
+                      bis_skin_checked="1"
+                    >
+                      <img
+                        src="//www.afip.gob.ar/images/f960/DATAWEB.jpg"
+                        border="0"
+                      />
+                    </a>
+                    Copyright © Clawi S.A. - Todos los derechos reservados.<br />
+                    <a
+                      title="ver Términos y condiciones"
+                      href="//www.mundogaturro.local/terminos.html"
+                      bis_skin_checked="1"
+                      >Términos y condiciones de uso
+                    </a>
+                    -
+                    <a
+                      title="ver Política de Privacidad"
+                      href="//www.mundogaturro.local/privacidad.html"
+                      bis_skin_checked="1"
+                      >Privacidad</a
+                    >.<br />
+                    <a
+                      href="//www.buenosaires.gob.ar/defensaconsumidor/direccion-general"
+                      target="_black"
+                      title="ver Dirección General de Defensa y Protección al Consumidor"
+                      bis_skin_checked="1"
+                      >Dirección General de Defensa y Protección al
+                      Consumidor</a
+                    >.
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix" bis_skin_checked="1">&nbsp;</div>
+              <div class="disclaimer" bis_skin_checked="1">
+                <small
+                  ><p>
+                    Recabamos sus datos con la finalidad de gestionar y
+                    administrar su acceso al Sitio Web MundoGaturro.com,
+                    conforme lo establecido por el art. 6 de Ley 25326 Usted es
+                    responsable por la inexactitud o negativa de proporcionar
+                    sus datos. El titular de datos personales tiene la facultad
+                    de ejercer el derecho de acceso a los mismos en forma
+                    gratuita a intervalos no inferiores a seis meses, salvo que
+                    se acredite un interés legítimo al efecto, conforme lo
+                    establecido en el artículo 14, inciso 3 de la Ley nº 25.326.
+                    <strong
+                      >La dirección Nacional de Datos Personales, Órgano de
+                      Control de la Ley nº 25.326</strong
+                    >, tiene la atribución de atender las denuncias y reclamos
+                    que se interpongan con relación al incumplimiento de las
+                    normas sobre protección de datos personales." Usted podrá
+                    ejercer el derecho de acceso, rectificación, y supresión de
+                    sus datos conforme lo establecido en el art. 6 de la Ley
+                    25326, enviando un email a cmlegales@cmd.com.ar o
+                    comunicándose telefónicamente al +5411 49438750
+                  </p>
+                  <p>
+                    <strong
+                      >Para contactar a la Dirección Nacional de Protección de
+                      Datos Personales:</strong
+                    ><br />
+                    Sarmiento 1118, 5º piso (C1041AAX)<br />
+                    Tel. 4383-8510/12/13/15<br />
+                    www.jus.gov.ar/datospersonales<br />
+                    infodnpdp@jus.gov.ar
+                  </p></small
+                >
+              </div>
+            </div>
+          </div>
+          <!-- <div style="float: right;" class="oculto_mobile"><a href="https://descargas.mundogaturro.com/mundogaturro_installer_la.exe"><img src="/images/descargable.png" width="250"></a> </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón Naranja de Phishing -->
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 m-4 shadow-lg" style="z-index: 9999;">
+      ⚠️ Simulación de phishing
+    </button>
+
+    <!-- Toast para feedback -->
+    <div id="feedback-toast" class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 9999; display: none;">
+        <div class="alert alert-success fw-bold shadow" role="alert" id="feedback-mensaje">
+        </div>
+    </div>
+
+    <!-- Modal para Videotour -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLabel">Videotour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/Crl_8X1YU-Y" title="Videotour" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/mundo.js"></script>
+  </body>
+</html>
