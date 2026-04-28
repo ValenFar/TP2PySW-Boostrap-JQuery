@@ -1,0 +1,53 @@
+/* --- 1. FONDO GENERAL (El efecto "Lavado") --- */
+body {
+  /* Capa blanca muy potente (0.92) para que la imagen casi no se note en el cuerpo */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('../img/fondodestinos.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  margin: 0;
+}
+
+/* --- 2. EL BANNER (La "Ventana" clara) --- */
+.hero-destinos {
+  /* Acá usamos una capa oscura suave (0.4) para que la imagen se vea clara y el texto resalte */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fondodestinos.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Esto hace que coincida perfecto con el fondo del body */
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- 3. EL EFECTO TRANSLÚCIDO PARA EL CONTENIDO --- */
+.caja-translucida {
+  background-color: rgba(255, 255, 255, 0.85); /* Blanco con 85% de opacidad (deja ver el fondo) */
+  border-radius: 15px; /* Bordes un poco redondeados para que quede más suave */
+  padding: 40px; /* Espacio interno para que no quede todo apretado */
+}
+
+/* --- 4. GALERÍA DE VIAJEROS --- */
+.img-galeria {
+  height: 350px;
+  object-fit: cover; /* Evita que las caras de los viajeros se deformen */
+  transition: transform 0.4s ease; /* Prepara el efecto de zoom */
+}
+
+/* Esta clase va a activar el Jquery */
+.zoom-activo .img-galeria {
+  transform: scale(1.08);
+}
+
+/* Estilo para los iconos de características */
+.bi-shield-check, .bi-map, .bi-chat-heart {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+/* Pequeña animación cuando pasas el mouse por la columna */
+.col-md-4:hover i {
+  transform: translateY(-10px) scale(1.1);
+}
