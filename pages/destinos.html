@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,14 +13,227 @@
     /><!-- Boostrap Icon-->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/destinos.css" />
-    <title>Document</title>
+    <title>Nuestros Destinos</title>
   </head>
+
   <body>
     <div id="navbar-placeholder"></div>
     <!--NavBar con JQuery-->
-    <main class="container my-5">
-      <h1>Destinos</h1>
+    <header class="hero-destinos text-center text-white d-flex align-items-center justify-content-center">
+      <div>
+        <h1 class="display-3 fw-bold">Nuestros Destinos</h1>
+        <p class="fs-4 lead">Tu próxima gran aventura empieza acá.</p>
+      </div>
+    </header>
+
+    <!-- Viajeros - galeria de fotos -->
+
+    <main class="container my-5 text-center">
+      <h2 class="mb-3 fw-bold">Ellos ya vivieron la magia del Norte</h2>
+      <p class="fs-5 text-muted mb-5">¿Vos qué estás esperando para armar tus valijas?</p>
+
+      <div class="mb-5">
+        <button class="btn btn-dark btn-filtro" data-filtro="todos">Mostrar Todos</button>
+        <button class="btn btn-outline-danger btn-filtro" data-filtro="cultural">Cultura e Historia</button>
+        <button class="btn btn-outline-success btn-filtro" data-filtro="naturaleza">Naturaleza y Paisajes</button>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-6 col-lg-4 item-filtro cultural">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/purmamarca.webp" class="card-img-top img-galeria" alt="Viajero en Purmamarca">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item-filtro naturaleza">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/salinas.webp" class="card-img-top img-galeria" alt="Viajero en Salinas">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item-filtro cultural">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/tilcara.webp" class="card-img-top img-galeria" alt="Viajero en Tilcara">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item-filtro cultural">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/humahuaca.webp" class="card-img-top img-galeria" alt="Viajero en Humahuaca">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item-filtro naturaleza">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/valleluna.webp" class="card-img-top img-galeria" alt="Viajero en Valle de la Luna">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item-filtro naturaleza">
+          <a href="blog.html" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 tarjeta-viajero">
+              <img src="../assets/img/yungas.webp" class="card-img-top img-galeria" alt="Viajero en Las Yungas">
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row g-4 py-5 mt-5 border-top text-center">
+        <h2 class="mb-5 fw-bold">¿Por qué viajar con nosotros?</h2>
+        
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="bi bi-shield-check text-danger display-4"></i>
+          </div>
+          <h4 class="fw-bold">Seguridad Garantizada</h4>
+          <p class="text-muted px-3">Todas nuestras excursiones cuentan con seguros de viajero y guías certificados en primeros auxilios de alta montaña.</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="bi bi-map text-danger display-4"></i>
+          </div>
+          <h4 class="fw-bold">Expertos Locales</h4>
+          <p class="text-muted px-3">Somos jujeños y amamos nuestra tierra. Te llevamos a rincones secretos que no aparecen en los mapas convencionales.</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="bi bi-chat-heart text-danger display-4"></i>
+          </div>
+          <h4 class="fw-bold">Atención Personalizada</h4>
+          <p class="text-muted px-3">No sos un número más. Grupos reducidos para que vivas una experiencia auténtica y a tu propio ritmo.</p>
+        </div>
+      </div>
+
+      <!-- Tabla de precios responsive (table-responsive) -->
+
+
+      <div class="table-responsive shadow-sm rounded bg-white p-3">
+          <table class="table table-bordered text-center align-middle mb-0">
+            
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 25%;">Características</th>
+                <th scope="col">Mochilero <br><small class="text-light fw-normal">$60.000</small></th>
+                <th scope="col">Aventurero <br><small class="text-light fw-normal">$80.000</small></th>
+                <th scope="col">Premium <br><small class="text-light fw-normal">$100.000</small></th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td class="text-start fw-bold">
+                  Traslados 
+                  <i class="bi bi-info-circle-fill text-danger ms-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Buscamos a los pasajeros por el hotel o terminal en combis climatizadas"></i>
+                </td>
+                <td class="celda-hover">Desde terminal</td>
+                <td class="celda-hover">Puerta a puerta</td>
+                <td class="celda-hover">Vehículo privado</td>
+              </tr>
+              <tr>
+                <td class="text-start fw-bold">
+                  Guía Turístico
+                  <i class="bi bi-info-circle-fill text-danger ms-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Guías locales certificados por el Ministerio de Turismo de Jujuy"></i>
+                </td>
+                <td class="celda-hover">Grupal (Básico)</td>
+                <td class="celda-hover">Grupal (Bilingüe)</td>
+                <td class="celda-hover">Privado (Bilingüe)</td>
+              </tr>
+              <tr>
+                <td class="text-start fw-bold">
+                  Comidas Incluidas
+                  <i class="bi bi-info-circle-fill text-danger ms-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Opciones vegetarianas y aptas celíacos disponibles avisando con 24hs de anticipación"></i>
+                </td>
+                <td class="celda-hover text-danger fw-bold"><i class="bi bi-x-lg"></i></td>
+                <td class="celda-hover text-success fw-bold">Almuerzo regional</td>
+                <td class="celda-hover text-success fw-bold">Pensión completa</td>
+              </tr>
+              <tr>
+                <td class="text-start fw-bold">Seguro Médico</td>
+                <td class="celda-hover text-success fw-bold"><i class="bi bi-check-lg"></i></td>
+                <td class="celda-hover text-success fw-bold"><i class="bi bi-check-lg"></i></td>
+                <td class="celda-hover text-success fw-bold"><i class="bi bi-check-lg"></i></td>
+              </tr>
+            </tbody>
+            
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><a href="blog.html" class="btn btn-outline-danger w-100">Elegir</a></td>
+                <td><a href="blog.html" class="btn btn-outline-danger w-100">Elegir</a></td>
+                <td><a href="blog.html" class="btn btn-outline-danger w-100">Elegir</a></td>
+              </tr>
+            </tfoot>
+            
+          </table>
+        </div>
+      </div>
+
+      </div> <div class="mt-5 pt-5 border-top text-start">
+        <h2 class="mb-4 fw-bold text-center">Preguntas Frecuentes</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm" id="accordionFAQ">
+              
+              <div class="accordion-item border-0 mb-2 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    ¿Qué tipo de ropa recomiendan llevar?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    Recomendamos vestirse "en capas" (tipo cebolla). Durante el día, el sol en la Quebrada y Puna es muy fuerte, pero al caer la tarde la temperatura baja drásticamente. ¡No te olvides de un buen protector solar, lentes de sol y calzado cómodo para trekking!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    ¿Qué pasa si me apuno (mal de altura)?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    Es normal sentir un poco de fatiga en destinos altos como Salinas Grandes. Nuestros guías están capacitados para asistirte y llevamos oxígeno en todos nuestros vehículos por precaución. Te recomendamos comer liviano, tomar mucha agua y, si te animás, ¡probar un té de coca!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    ¿Qué cobertura tiene el seguro médico incluido?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    Todas nuestras experiencias cuentan con un seguro de asistencia al viajero integral diseñado para turismo de aventura en el Norte. Cubre desde atención médica inmediata hasta traslados de emergencia si fuera necesario. Trabajamos con empresas líderes para que vos solo te preocupes por disfrutar el paisaje.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
+
     <div id="footer-placeholder"></div>
     <!--Footer con JQuery-->
   </body>
